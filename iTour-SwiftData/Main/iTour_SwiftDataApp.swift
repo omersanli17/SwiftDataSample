@@ -5,13 +5,15 @@
 //  Created by ömer şanlı on 28.01.2024.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
 struct iTour_SwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
+        .modelContainer(for: Destination.self)
     }
 }
